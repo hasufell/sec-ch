@@ -67,7 +67,7 @@ bunnyHops gf bi =
 -- Events have no particularly guaranteed order.
 evalGame :: [[BunnyHop]]  -- ^ bunny hops for different bunnies
          -> Int           -- ^ max iterations after which we kill
-                          --   all remainingbunnies
+                          --   all remaining bunnies
          -> Vector Int    -- ^ game field
          -> [Event]
 evalGame xs maxIter gf = go xs maxIter

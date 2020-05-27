@@ -21,8 +21,8 @@ Your objective is to write a Haskell function with the signature:
 
 ```hs
 runGame :: Int -> [Int] -> Int
-``
-`
+```
+
 Where the first argument is the number of bunnies participating in the game
 and the second argument is the list of jump values on the stones from left
 to right. The result of the function shall be the number of bunnies that would
