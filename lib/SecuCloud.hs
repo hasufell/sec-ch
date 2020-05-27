@@ -39,7 +39,8 @@ runGame :: Int    -- ^ number of bunnies
 runGame bs gf' =
   let gf    = V.fromList gf'
       bhops = fmap (bunnyHops gf) [1 .. bs]
-  in  length . filter isEscape . evalGame bhops 500 $ gf
+      maxIter = V.length gf * 100
+  in  length . filter isEscape . evalGame bhops maxIter $ gf
 
 
 bunnyHops :: Vector Int  -- ^ game field
